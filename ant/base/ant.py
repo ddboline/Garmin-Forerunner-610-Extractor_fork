@@ -28,8 +28,7 @@ import time
 import Queue
 import logging
 
-import usb.core
-import usb.util
+import usb
 
 from message import Message
 from commons import format_list
