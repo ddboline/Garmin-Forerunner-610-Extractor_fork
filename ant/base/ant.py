@@ -213,8 +213,9 @@ class Ant():
             else:
                 data = self._driver.read()
                 self._buffer.extend(data)
-                _logger.debug("Read data: %s (now have %s in buffer)",
-                              format_list(data), format_list(self._buffer))
+                if data:
+                    _logger.debug("Read data: %s (now have %s in buffer)",
+                                  format_list(data), format_list(self._buffer))
 
     # Ant functions
 
