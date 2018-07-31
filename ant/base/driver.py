@@ -218,7 +218,7 @@ try:
             pass
         
         def read(self):
-            return self._in.read(4096)
+            return self._in.read(4096, 10000)
         
         def write(self, data):
             self._out.write(data)
